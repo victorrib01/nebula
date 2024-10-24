@@ -1,0 +1,77 @@
+@mixin military-camouflage-background {
+	background: $military-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin special-camouflage-background {
+	background: $special-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin gold-camouflage-background {
+	background: $gold-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin diamond-camouflage-background {
+	background: $diamond-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin dark-spine-camouflage-background {
+	background: $dark-spine-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin dark-matter-camouflage-background {
+	background: $dark-matter-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin mystic-gold-camouflage-background {
+	@include gold-camouflage-background;
+}
+
+@mixin opal-camouflage-background {
+	@include diamond-camouflage-background;
+}
+
+@mixin afterlife-camouflage-background {
+	background: $afterlife-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin nebula-camouflage-background {
+	background: $nebula-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin gold-tiger-camouflage-background {
+	@include gold-camouflage-background;
+}
+
+@mixin kings-ransom-camouflage-background {
+	background: $kings-ransom-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin catalyst-camouflage-background {
+	background: $catalyst-gradient;
+	background-position: center center;
+	background-size: cover;
+}
+
+@mixin abyss-camouflage-background {
+	background: $abyss-gradient;
+	background-position: center center;
+	background-size: cover;
+}

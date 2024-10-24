@@ -1,0 +1,73 @@
+// Colors
+$background-color: #121212;
+$elevation-0-color: darken(white, 95%);
+$elevation-1-color: darken(white, 90%);
+$elevation-2-color: darken(white, 87.5%);
+$elevation-3-color: darken(white, 85%);
+$elevation-4-color: darken(white, 82.5%);
+$elevation-5-color: darken(white, 80%);
+$elevation-6-color: darken(white, 77.5%);
+$elevation-7-color: darken(white, 75%);
+$elevation-8-color: darken(white, 72.5%);
+$elevation-9-color: darken(white, 70%);
+$text-color: white;
+
+// Basic Palette
+$green: #10ac84;
+$red: #ee5253;
+$yellow: #feca57;
+$orange: #ff9f43;
+$purple: #5f27cd;
+$blue: #2e86de;
+$silver: #d7d7d7;
+$pink: #d11f91;
+$cyan: #1fd1d1;
+
+// Dark Matter
+$dark-matter-1: #332BA6;
+$dark-matter-2: #9D75DF;
+
+// Nebula
+$nebula-1: $pink;
+$nebula-2: $cyan;
+
+// Abyss
+$abyss-1: #70CD91;
+$abyss-2: #2566AA;
+
+
+$border-radius: 3px;
+$transition: 0.25s ease;
+$font-family: Inter, sans-serif;
+$container-width: 1200px;
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 1100px;
+
+// Camouflage background gradients
+
+// Base
+$military-gradient: url('/military-gradient.svg');
+
+// Special
+$special-gradient: url('/special-gradient.svg');
+
+// Multiplayer
+$gold-gradient: url('/gold-gradient.svg');
+$diamond-gradient: url('/diamond-gradient.svg');
+$dark-spine-gradient: url('/dark-spine-gradient.svg');
+$dark-matter-gradient: url('/dark-matter-gradient.svg');
+
+// Zombies
+$afterlife-gradient: url('/afterlife-gradient.svg');
+$nebula-gradient: url('/nebula-gradient.svg');
+
+// Warzone
+$kings-ransom-gradient: url('/kings-ransom-gradient.svg'); 
+$catalyst-gradient: url('/catalyst-gradient.svg');
+$abyss-gradient: url('/abyss-gradient.svg');
+
+$dark-matter-gradient-alt: radial-gradient(circle farthest-corner at 10% 20%, $dark-matter-1 0%, $dark-matter-2 75%);
+$nebula-gradient-alt: radial-gradient(circle farthest-corner at 10% 20%, $nebula-1 0%, $nebula-2 75%);
+$abyss-gradient-alt: radial-gradient(circle farthest-corner at 10% 20%, $abyss-1 0%, $abyss-2 75%);
