@@ -4,10 +4,10 @@ import defaultProgress from '@/data/defaults/progress'
 const weapons = [
   { name: 'C9' },
   { name: 'KSV' },
-  { name: 'TANTO .22' },
+  { name: 'Tanto .22' },
   { name: 'PP-919' },
   { name: 'Jackal PDW' },
-  { name: 'KOMPAKT 92' },
+  { name: 'Kompakt 92' },
 ]
 
 export default weapons.map((weapon) => ({

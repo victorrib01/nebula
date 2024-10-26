@@ -6,8 +6,8 @@ const weapons = [
   { name: 'AK-74' },
   { name: 'AMES 85' },
   { name: 'GPR 91' },
-  { name: 'MODEL L' },
-  { name: 'GOBLIN MK 2' },
+  { name: 'Model L' },
+  { name: 'Goblin Mk2' },
   { name: 'AS VAL' },
 ]
 
