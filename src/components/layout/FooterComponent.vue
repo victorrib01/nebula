@@ -2,7 +2,7 @@
   <footer class="container">
     <div>
       <i18n-t keypath="general.made_by" scope="global">
-        <a href="https://emilcarlsson.se/">Emil Carlsson</a>
+        <a href="https://emilcarlsson.se/" class="copyright">Emil Carlsson</a>
       </i18n-t>
       <i18n-t v-if="translatedBy" keypath="general.translated_by" scope="global">
         <a :href="translatedBy.url">{{ translatedBy.username }}</a>
@@ -15,10 +15,10 @@
       <a href="https://github.com/carlssonemil/nebula/issues/new?title=[Bug]%20" target="_blank">
         Report an issue
       </a>
-      <a href="https://github.com/carlssonemil/nebula" v-tippy="{ content: 'GitHub' }">
+      <a href="https://github.com/carlssonemil/nebula" v-tippy="{ content: 'GitHub' }" class="icon">
         <IconComponent name="github" />
       </a>
-      <a href="https://discord.gg/VzKpZbBPkM" v-tippy="{ content: 'Discord' }">
+      <a href="https://discord.gg/VzKpZbBPkM" v-tippy="{ content: 'Discord' }" class="icon">
         <IconComponent name="discord" />
       </a>
       <LocaleSwitcherComponent />

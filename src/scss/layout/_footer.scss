@@ -31,6 +31,12 @@ footer {
 			margin-left: 4px;
 			margin-right: 0 !important;
 		}
+
+		&:last-child {
+			@media (max-width: $tablet) {
+				gap: 30px;
+			}
+		}
 	}
 
 	a {
@@ -47,7 +53,7 @@ footer {
 			margin-right: 50px;
 
 			@media (max-width: $tablet) {
-				margin-right: 35px;
+				margin-right: 0;
 			}
 		}
 
@@ -55,7 +61,13 @@ footer {
 			margin-left: 50px;
 
 			@media (max-width: $tablet) {
-				margin-left: 35px;
+				margin-left: 0;
+			}
+		}
+
+		&:not(.icon):not(.copyright) {
+			@media (max-width: $tablet) {
+				display: none;
 			}
 		}
 	}
