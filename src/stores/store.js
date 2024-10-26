@@ -6,6 +6,7 @@ import defaultCallingCards from '@/data/defaults/calling_cards'
 import defaultPreferences from '@/data/defaults/preferences'
 import weaponRequirements from '@/data/requirements/weapons'
 import camouflageNameChanges from '@/data/camouflageNameChanges'
+import camouflageOrder from '@/data/camouflageOrder'
 
 const token = import.meta.env.MODE === 'production' ? 'nebula' : 'nebula-dev'
 
@@ -172,6 +173,43 @@ export const useStore = defineStore({
 
     toggleCamouflageCompleted(weaponName, camouflage, current, progressKey) {
       this.weapons.find((w) => w.name === weaponName).progress[progressKey][camouflage] = !current
+
+      if (!current) {
+        this.togglePreviousCamouflagesCompleted(weaponName, camouflage, current, progressKey)
+      } else {
+        this.resetNextCamouflages(weaponName, camouflage, progressKey)
+      }
+
+      this.storeProgress()
+    },
+
+    togglePreviousCamouflagesCompleted(weaponName, camouflage, current, progressKey) {
+      const selectedWeapon = this.weapons.find((w) => w.name === weaponName)
+      const sortedCamouflages = Object.keys(selectedWeapon.progress[progressKey]).sort(
+        (a, b) => camouflageOrder.indexOf(a) - camouflageOrder.indexOf(b)
+      )
+      const camouflageIndex = sortedCamouflages.findIndex((c) => c === camouflage)
+      const previousCamouflages = sortedCamouflages.slice(0, camouflageIndex)
+
+      previousCamouflages.forEach((camo) => {
+        selectedWeapon.progress[progressKey][camo] = !current
+      })
+
+      this.storeProgress()
+    },
+
+    resetNextCamouflages(weaponName, camouflage, progressKey) {
+      const selectedWeapon = this.weapons.find((w) => w.name === weaponName)
+      const sortedCamouflages = Object.keys(selectedWeapon.progress[progressKey]).sort(
+        (a, b) => camouflageOrder.indexOf(a) - camouflageOrder.indexOf(b)
+      )
+      const camouflageIndex = sortedCamouflages.findIndex((c) => c === camouflage)
+      const nextCamouflages = sortedCamouflages.slice(camouflageIndex + 1)
+
+      nextCamouflages.forEach((camo) => {
+        selectedWeapon.progress[progressKey][camo] = false
+      })
+
       this.storeProgress()
     },
 
