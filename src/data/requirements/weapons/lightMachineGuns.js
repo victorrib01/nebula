@@ -1,8 +1,61 @@
 import lightMachineGuns from '@/data/weapons/lightMachineGuns'
 
+const specialCamouflages = {
+  'PU-21': {
+    multiplayer: {
+      'Neon Bath': { amount: 30, type: 'kills_shortly_after_sprinting' },
+      'Vigilance': { amount: 2, type: 'kills_without_reloading', times: 10 },
+    },
+
+    zombies: {
+      Vivid: { amount: 10, type: 'mangler_kills' },
+      Justice: { amount: 300, type: 'hipfire_kills' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
+  'XMG': {
+    multiplayer: {
+      Buzz: { amount: 2, type: 'kills_without_releasing_trigger', times: 5 },
+      Snakebite: { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      'Hiss': { amount: 10, type: 'kills_without_reloading' },
+      'Acid Slide': { amount: 300, type: 'kills_with_brain_rot_equipped' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
+  'GPMG-7': {
+    multiplayer: {
+      'Brush Stroke': { amount: 50, type: 'kills_while_strategist_combat_specialty_is_active' },
+      'Idyllic': { amount: 30, type: 'point_blank_kills' },
+    },
+
+    zombies: {
+      'Impressionist': { amount: 300, type: 'point_blank_kills' },
+      'Other World': { amount: 10, type: 'kills_without_reloading' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+}
+
 export default {
   ...lightMachineGuns.reduce((acc, weapon) => {
-    acc[weapon.name] = {
+    acc[weapon] = {
       multiplayer: {
         // Military
         'Granite': { amount: 5, type: 'headshots' },
@@ -16,14 +69,13 @@ export default {
         'Red Tiger': { amount: 100, type: 'headshots' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.multiplayer,
 
         // Mastery
-        'Gold': null,
-        'Diamond': null,
-        'Dark Spine': null,
-        'Dark Matter': null,
+        'Gold': { amount: 10, type: 'double_kills' },
+        'Diamond': { amount: 3, type: 'kills_without_dying', times: 10 },
+        'Dark Spine': { amount: 3, type: 'triple_kills' },
+        'Dark Matter': { amount: 5, type: 'kills_without_dying', times: 3 },
       },
 
       zombies: {
@@ -39,14 +91,13 @@ export default {
         'Red Tiger': { amount: 1000, type: 'critical_kills' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.zombies,
 
         // Mastery
-        'Mystic Gold': null,
-        'Opal': null,
-        'Afterlife': null,
-        'Nebula': null,
+        'Mystic Gold': { amount: 10, type: 'rapid_kills', times: 15 },
+        'Opal': { amount: 30, type: 'special_zombie_kills' },
+        'Afterlife': { amount: 20, type: 'consecutive_kills_without_taking_damage', times: 10 },
+        'Nebula': { amount: 10, type: 'elite_zombie_kills' },
       },
 
       warzone: {
@@ -62,8 +113,7 @@ export default {
         'Red Tiger': { amount: 100, type: 'eliminations' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.warzone,
 
         // Mastery
         'Gold Tiger': null,

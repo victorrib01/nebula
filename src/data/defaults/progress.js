@@ -1,70 +1,19 @@
-export default {
-  multiplayer: {
-    // Military
-    'Granite': false,
-    'Woodland': false,
-    'Savanna': false,
-    'Splinter': false,
-    'Moss': false,
-    'Shade': false,
-    'Digital': false,
-    'Tide': false,
-    'Red Tiger': false,
+import camouflages from '@/data/requirements/weapons'
 
-    // Special
-    'Special 1 (TBD)': false,
-    'Special 2 (TBD)': false,
+export default Object.entries(camouflages).reduce((acc, [weaponName, weaponData]) => {
+  acc[weaponName] = {
+    multiplayer: {},
+    zombies: {},
+    warzone: {},
+  }
 
-    // Mastery
-    'Gold': false,
-    'Diamond': false,
-    'Dark Spine': false,
-    'Dark Matter': false,
-  },
+  Object.keys(weaponData).forEach((mode) => {
+    acc[weaponName][mode] = {}
 
-  zombies: {
-    // Military
-    'Granite': false,
-    'Woodland': false,
-    'Savanna': false,
-    'Splinter': false,
-    'Moss': false,
-    'Shade': false,
-    'Digital': false,
-    'Tide': false,
-    'Red Tiger': false,
+    Object.keys(weaponData[mode]).forEach((camouflage) => {
+      acc[weaponName][mode][camouflage] = false
+    })
+  })
 
-    // Special
-    'Special 1 (TBD)': false,
-    'Special 2 (TBD)': false,
-
-    // Mastery
-    'Mystic Gold': false,
-    'Opal': false,
-    'Afterlife': false,
-    'Nebula': false,
-  },
-
-  warzone: {
-    // Military
-    'Granite': false,
-    'Woodland': false,
-    'Savanna': false,
-    'Splinter': false,
-    'Moss': false,
-    'Shade': false,
-    'Digital': false,
-    'Tide': false,
-    'Red Tiger': false,
-
-    // Special
-    'Special 1 (TBD)': false,
-    'Special 2 (TBD)': false,
-
-    // Mastery
-    'Gold Tiger': false,
-    "King's Ransom": false,
-    'Catalyst': false,
-    'Abyss': false,
-  },
-}
+  return acc
+}, {})

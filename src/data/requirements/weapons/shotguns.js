@@ -1,8 +1,44 @@
 import shotguns from '@/data/weapons/shotguns'
 
+const specialCamouflages = {
+  'Marine SP': {
+    multiplayer: {
+      'Blueberry Lime': { amount: 30, type: 'hipfire_kills' },
+      'Chromed Out': { amount: 30, type: 'kills_shortly_after_sprinting' },
+    },
+
+    zombies: {
+      'Strawberry Mint': { amount: 300, type: 'kills_at_rare_rarity_or_higher' },
+      'Peel Out': { amount: 300, type: 'hipfire_kills' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
+  'ASG-89': {
+    multiplayer: {
+      'Night Terror': { amount: 30, type: 'point_blank_kills' },
+      'Drive-In': { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      'Dream Eater': { amount: 100, type: 'zombie_kills_while_affected_by_tactical' },
+      'Coin-Op': { amount: 30, type: 'parasite_kills' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+}
+
 export default {
   ...shotguns.reduce((acc, weapon) => {
-    acc[weapon.name] = {
+    acc[weapon] = {
       multiplayer: {
         // Military
         'Granite': { amount: 5, type: 'headshots' },
@@ -16,14 +52,13 @@ export default {
         'Red Tiger': { amount: 100, type: 'headshots' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.multiplayer,
 
         // Mastery
-        'Gold': null,
-        'Diamond': null,
-        'Dark Spine': null,
-        'Dark Matter': null,
+        'Gold': { amount: 10, type: 'double_kills' },
+        'Diamond': { amount: 3, type: 'kills_without_dying', times: 10 },
+        'Dark Spine': { amount: 3, type: 'triple_kills' },
+        'Dark Matter': { amount: 5, type: 'kills_without_dying', times: 3 },
       },
 
       zombies: {
@@ -39,14 +74,13 @@ export default {
         'Red Tiger': { amount: 1000, type: 'critical_kills' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.zombies,
 
         // Mastery
-        'Mystic Gold': null,
-        'Opal': null,
-        'Afterlife': null,
-        'Nebula': null,
+        'Mystic Gold': { amount: 10, type: 'rapid_kills', times: 15 },
+        'Opal': { amount: 30, type: 'special_zombie_eliminations' },
+        'Afterlife': { amount: 20, type: 'consecutive_kills_without_taking_damage', times: 10 },
+        'Nebula': { amount: 10, type: 'elite_zombie_kills' },
       },
 
       warzone: {
@@ -62,8 +96,7 @@ export default {
         'Red Tiger': { amount: 100, type: 'eliminations' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.warzone,
 
         // Mastery
         'Gold Tiger': null,

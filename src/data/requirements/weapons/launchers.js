@@ -1,52 +1,86 @@
 import launchers from '@/data/weapons/launchers'
 
+const specialCamouflages = {
+  'CIGMA 28': {
+    multiplayer: {
+      Policia: { amount: 15, type: 'direct_hit_kills' },
+      Abstract: { amount: 10, type: 'aerial_scorestreaks' },
+    },
+
+    zombies: {
+      CBRNE: { amount: 300, type: 'kills_while_pack_a_punched' },
+      Technique: { amount: 75, type: 'armored_zombie_kills' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
+  'HE-1': {
+    multiplayer: {
+      Reboot: null,
+      Dreamer: { amount: 10, type: 'scorestreaks_or_enemy_equipment' },
+    },
+
+    zombies: {
+      Decrypt: null,
+      Renewed: { amount: 300, type: 'kills_at_rare_rarity_or_higher' },
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+}
+
 export default {
   ...launchers.reduce((acc, weapon) => {
-    acc[weapon.name] = {
+    acc[weapon] = {
       multiplayer: {
         // Military
-        'Granite': { amount: 5, type: 'headshots' },
-        'Woodland': { amount: 10, type: 'headshots' },
-        'Savanna': { amount: 15, type: 'headshots' },
-        'Splinter': { amount: 20, type: 'headshots' },
-        'Moss': { amount: 30, type: 'headshots' },
-        'Shade': { amount: 40, type: 'headshots' },
-        'Digital': { amount: 50, type: 'headshots' },
-        'Tide': { amount: 75, type: 'headshots' },
-        'Red Tiger': { amount: 100, type: 'headshots' },
+        'Granite': { amount: 5, type: 'kills' },
+        'Woodland': { amount: 10, type: 'kills' },
+        'Savanna': { amount: 15, type: 'kills' },
+        'Splinter': { amount: 20, type: 'kills' },
+        'Moss': { amount: 30, type: 'kills' },
+        'Shade': { amount: 40, type: 'kills' },
+        'Digital': { amount: 50, type: 'kills' },
+        'Tide': { amount: 75, type: 'kills' },
+        'Red Tiger': { amount: 100, type: 'kills' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.multiplayer,
 
         // Mastery
-        'Gold': null,
-        'Diamond': null,
-        'Dark Spine': null,
-        'Dark Matter': null,
+        'Gold': { amount: 5, type: 'kills_without_dying', times: 3 },
+        'Diamond': { amount: 3, type: 'kills_without_dying', times: 10 },
+        'Dark Spine': { amount: 3, type: 'triple_kills' },
+        'Dark Matter': { amount: 5, type: 'kills_without_dying', times: 3 },
       },
 
       zombies: {
         // Military
-        'Granite': { amount: 50, type: 'critical_kills' },
-        'Woodland': { amount: 100, type: 'critical_kills' },
-        'Savanna': { amount: 150, type: 'critical_kills' },
-        'Splinter': { amount: 200, type: 'critical_kills' },
-        'Moss': { amount: 300, type: 'critical_kills' },
-        'Shade': { amount: 400, type: 'critical_kills' },
-        'Digital': { amount: 500, type: 'critical_kills' },
-        'Tide': { amount: 750, type: 'critical_kills' },
-        'Red Tiger': { amount: 1000, type: 'critical_kills' },
+        'Granite': { amount: 50, type: 'kills' },
+        'Woodland': { amount: 100, type: 'kills' },
+        'Savanna': { amount: 150, type: 'kills' },
+        'Splinter': { amount: 200, type: 'kills' },
+        'Moss': { amount: 300, type: 'kills' },
+        'Shade': { amount: 400, type: 'kills' },
+        'Digital': { amount: 500, type: 'kills' },
+        'Tide': { amount: 750, type: 'kills' },
+        'Red Tiger': { amount: 1000, type: 'kills' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.zombies,
 
         // Mastery
-        'Mystic Gold': null,
-        'Opal': null,
-        'Afterlife': null,
-        'Nebula': null,
+        'Mystic Gold': { amount: 3, type: 'kills_in_a_single_shot', times: 15 },
+        'Opal': { amount: 30, type: 'special_zombie_eliminations' },
+        'Afterlife': { amount: 20, type: 'consecutive_kills_without_taking_damage', times: 10 },
+        'Nebula': { amount: 10, type: 'elite_zombie_kills' },
       },
 
       warzone: {
@@ -62,8 +96,7 @@ export default {
         'Red Tiger': { amount: 100, type: 'eliminations' },
 
         // Special
-        'Special 1 (TBD)': null,
-        'Special 2 (TBD)': null,
+        ...specialCamouflages[weapon]?.warzone,
 
         // Mastery
         'Gold Tiger': null,
