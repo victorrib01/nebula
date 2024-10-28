@@ -271,6 +271,7 @@
       "parasite_kills": "{amount} Parasite kills",
       "point_blank_kills": "{amount} point-blank kills",
       "rapid_kills": "{amount} kills rapidly {times} times",
+      "scorestreaks" : "{amount} enemy scorestreaks destroyed",
       "scorestreaks_or_enemy_equipment": "{amount} scorestreaks or enemy equipment destroyed",
       "special_zombie_eliminations": "{amount} Special Zombie eliminations",
       "special_zombie_kills": "{amount} Special Zombie kills",

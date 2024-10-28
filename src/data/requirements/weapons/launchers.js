@@ -41,15 +41,15 @@ export default {
     acc[weapon] = {
       multiplayer: {
         // Military
-        'Granite': { amount: 5, type: 'kills' },
-        'Woodland': { amount: 10, type: 'kills' },
-        'Savanna': { amount: 15, type: 'kills' },
-        'Splinter': { amount: 20, type: 'kills' },
-        'Moss': { amount: 30, type: 'kills' },
-        'Shade': { amount: 40, type: 'kills' },
-        'Digital': { amount: 50, type: 'kills' },
-        'Tide': { amount: 75, type: 'kills' },
-        'Red Tiger': { amount: 100, type: 'kills' },
+        'Granite': { amount: 5, type: 'scorestreaks' },
+        'Woodland': { amount: 10, type: 'scorestreaks' },
+        'Savanna': { amount: 15, type: 'scorestreaks' },
+        'Splinter': { amount: 20, type: 'scorestreaks' },
+        'Moss': { amount: 30, type: 'scorestreaks' },
+        'Shade': { amount: 40, type: 'scorestreaks' },
+        'Digital': { amount: 50, type: 'scorestreaks' },
+        'Tide': { amount: 75, type: 'scorestreaks' },
+        'Red Tiger': { amount: 100, type: 'scorestreaks' },
 
         // Special
         ...specialCamouflages[weapon]?.multiplayer,
