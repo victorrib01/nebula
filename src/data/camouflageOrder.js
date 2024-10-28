@@ -1,4 +1,5 @@
 const militaryOrder = [
+  // Military
   'Granite',
   'Woodland',
   'Savanna',
@@ -8,6 +9,17 @@ const militaryOrder = [
   'Digital',
   'Tide',
   'Red Tiger',
+
+  // Zombies
+  'Slate',
+  'Desert',
+  'Evergreen',
+  'Rugged',
+  'Grim',
+  'Stripe',
+  'Oceanic',
+  'Whiteout',
+  'Purple Tiger',
 ]
 
 const specialOrder = [
