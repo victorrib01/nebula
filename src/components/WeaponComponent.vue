@@ -37,7 +37,7 @@
         class="progress"
         :style="{
           'grid-template-rows': `${
-            layout === 'list' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+            layout === 'list' ? 'repeat(' + Object.keys(camouflages).length - 6 + ', 1fr)' : ''
           }`,
           'grid-template-columns': `${layout === 'grid' ? 'repeat(' + 9 + ', 1fr)' : ''}`,
         }">
@@ -76,7 +76,7 @@
         class="progress"
         :style="{
           'grid-template-rows': `${
-            layout === 'list' ? 'repeat(' + Object.keys(camouflages).length + ', 1fr)' : ''
+            layout === 'list' ? 'repeat(' + Object.keys(camouflages).length - 9 + ', 1fr)' : ''
           }`,
           'grid-template-columns': `${layout === 'grid' ? 'repeat(' + 6 + ', 1fr)' : ''}`,
         }">
