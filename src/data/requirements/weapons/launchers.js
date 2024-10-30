@@ -20,12 +20,12 @@ const specialCamouflages = {
 
   'HE-1': {
     multiplayer: {
-      Reboot: null,
+      Reboot: { amount: 10, type: 'one_shot_kills' },
       Dreamer: { amount: 10, type: 'scorestreaks_or_enemy_equipment' },
     },
 
     zombies: {
-      Decrypt: null,
+      Decrypt: { amount: 30, type: 'vermin_kills' },
       Renewed: { amount: 300, type: 'kills_at_rare_rarity_or_higher' },
     },
 
