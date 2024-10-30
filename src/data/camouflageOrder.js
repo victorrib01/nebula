@@ -145,7 +145,7 @@ const specialOrder = [
   'Clear Water',
   'Concrete Jungle',
   'Harvest',
-  '?',
+  'Desert Sunset',
 
   // AEK-973
   'Ablaze',
@@ -173,7 +173,7 @@ const specialOrder = [
 
   // LR 7.62
   'Chaparral',
-  'Numbus',
+  'Nimbus',
   'Foxglove',
   'Overcast',
 
