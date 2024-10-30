@@ -89,10 +89,10 @@ export default {
         ...specialCamouflages[weapon]?.multiplayer,
 
         // Mastery
-        'Gold': null,
-        'Diamond': null,
-        'Dark Spine': null,
-        'Dark Matter': null,
+        'Gold': { amount: 10, type: 'double_kills' },
+        'Diamond': { amount: 3, type: 'kills_without_dying', times: 10 },
+        'Dark Spine': { amount: 3, type: 'triple_kills' },
+        'Dark Matter': { amount: 5, type: 'kills_without_dying', times: 3 },
       },
 
       zombies: {
