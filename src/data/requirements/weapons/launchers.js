@@ -3,7 +3,7 @@ import launchers from '@/data/weapons/launchers'
 const specialCamouflages = {
   'CIGMA 28': {
     multiplayer: {
-      Policia: { amount: 15, type: 'direct_hit_kills' },
+      Policia: { amount: 10, type: 'direct_hit_kills' },
       Abstract: { amount: 10, type: 'aerial_scorestreaks' },
     },
 
@@ -41,15 +41,15 @@ export default {
     acc[weapon] = {
       multiplayer: {
         // Military
-        'Granite': { amount: 5, type: 'scorestreaks' },
-        'Woodland': { amount: 10, type: 'scorestreaks' },
-        'Savanna': { amount: 15, type: 'scorestreaks' },
-        'Splinter': { amount: 20, type: 'scorestreaks' },
-        'Moss': { amount: 30, type: 'scorestreaks' },
-        'Shade': { amount: 40, type: 'scorestreaks' },
-        'Digital': { amount: 50, type: 'scorestreaks' },
-        'Tide': { amount: 75, type: 'scorestreaks' },
-        'Red Tiger': { amount: 100, type: 'scorestreaks' },
+        'Granite': { amount: 2, type: 'scorestreaks' },
+        'Woodland': { amount: 5, type: 'scorestreaks' },
+        'Savanna': { amount: 10, type: 'scorestreaks' },
+        'Splinter': { amount: 15, type: 'scorestreaks' },
+        'Moss': { amount: 20, type: 'scorestreaks' },
+        'Shade': { amount: 25, type: 'scorestreaks' },
+        'Digital': { amount: 30, type: 'scorestreaks' },
+        'Tide': { amount: 40, type: 'scorestreaks' },
+        'Red Tiger': { amount: 50, type: 'scorestreaks' },
 
         // Special
         ...specialCamouflages[weapon]?.multiplayer,
