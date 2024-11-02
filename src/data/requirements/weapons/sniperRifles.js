@@ -38,7 +38,7 @@ const specialCamouflages = {
   'LR 7.62': {
     multiplayer: {
       Chaparral: { amount: 30, type: 'one_shot_kills' },
-      Numbus: { amount: 15, type: 'longshot_kills' },
+      Nimbus: { amount: 15, type: 'longshot_kills' },
     },
 
     zombies: {
