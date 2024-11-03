@@ -191,8 +191,17 @@ export const useStore = defineStore({
       const camouflageIndex = sortedCamouflages.findIndex((c) => c === camouflage)
       const previousCamouflages = sortedCamouflages.slice(0, camouflageIndex)
 
+      let ignore_index = null;
+      
+      if (camouflageIndex === 10) {
+        ignore_index = 9;
+      }
+
       previousCamouflages.forEach((camo) => {
-        selectedWeapon.progress[progressKey][camo] = !current
+        if (ignore_index === null ? true : camo !== sortedCamouflages[ignore_index]) {
+          console.log(`CAMO: ${camo}, IGNORE: ${ignore_index}`)
+          selectedWeapon.progress[progressKey][camo] = !current
+        }
       })
 
       this.storeProgress()
