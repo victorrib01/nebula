@@ -25,7 +25,7 @@ const specialCamouflages = {
     },
 
     zombies: {
-      'Hiss': { amount: 10, type: 'kills_without_reloading' },
+      'Hiss': { amount: 10, type: 'kills_without_reloading', times: 15 },
       'Acid Slide': { amount: 300, type: 'kills_with_brain_rot_equipped' },
     },
 
@@ -43,7 +43,7 @@ const specialCamouflages = {
 
     zombies: {
       'Impressionist': { amount: 300, type: 'point_blank_kills' },
-      'Other World': { amount: 10, type: 'kills_without_reloading' },
+      'Other World': { amount: 10, type: 'kills_without_reloading', times: 15 },
     },
 
     warzone: {
