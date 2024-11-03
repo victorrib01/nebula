@@ -118,10 +118,11 @@
       icon-style="solid"
       size="25"
       @click="
+      console.log(`DEBUGGER ${progressKey}`);
         toggleFavorite({
-          type: progressKey === 'progress' ? 'weapons' : progressKey,
+          type: progressKey === 'progress' | progressKey === 'multiplayer' ? 'weapons' : progressKey,
           name: weapon.name,
-        })
+        });
       "
       v-tippy="{
         content: $t('filters.toggle_favorite', {
@@ -178,7 +179,7 @@ export default {
 
     isFavorite() {
       if (!this.store) return false
-      let type = this.progressKey === 'progress' ? 'weapons' : this.progressKey
+      let type = this.progressKey === 'progress' | this.progressKey === 'multiplayer' ? 'weapons' : this.progressKey
       return this.store.isFavorite(type, this.weapon.name)
     },
 
