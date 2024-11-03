@@ -118,7 +118,6 @@
       icon-style="solid"
       size="25"
       @click="
-      console.log(`DEBUGGER ${progressKey}`);
         toggleFavorite({
           type: progressKey === 'progress' | progressKey === 'multiplayer' ? 'weapons' : progressKey,
           name: weapon.name,
