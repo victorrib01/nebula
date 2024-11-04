@@ -191,8 +191,16 @@ export const useStore = defineStore({
       const camouflageIndex = sortedCamouflages.findIndex((c) => c === camouflage)
       const previousCamouflages = sortedCamouflages.slice(0, camouflageIndex)
 
+      let ignore_index = null;
+      
+      if (camouflageIndex === 10) {
+        ignore_index = 9;
+      }
+
       previousCamouflages.forEach((camo) => {
-        selectedWeapon.progress[progressKey][camo] = !current
+        if (ignore_index === null ? true : camo !== sortedCamouflages[ignore_index]) {
+          selectedWeapon.progress[progressKey][camo] = !current
+        }
       })
 
       this.storeProgress()
@@ -206,8 +214,16 @@ export const useStore = defineStore({
       const camouflageIndex = sortedCamouflages.findIndex((c) => c === camouflage)
       const nextCamouflages = sortedCamouflages.slice(camouflageIndex + 1)
 
+      let ignore_index = null;
+      
+      if (camouflageIndex === 9) {
+        ignore_index = 10;
+      }
+
       nextCamouflages.forEach((camo) => {
-        selectedWeapon.progress[progressKey][camo] = false
+        if (ignore_index === null ? true : camo !== sortedCamouflages[ignore_index]) {
+          selectedWeapon.progress[progressKey][camo] = false
+        }
       })
 
       this.storeProgress()
