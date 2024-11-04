@@ -23,7 +23,7 @@
         :data-label="label"
         @dblclick="toggleWeaponCompleted(weapon, completed, progressKey)"
         v-tippy="{
-          content: $t('pages.weapons.double_click_tooltip', {
+          content: $t('pages.multiplayer.double_click_tooltip', {
             state: completed
               ? $t('general.reset').toLowerCase()
               : $t('general.complete').toLowerCase(),
@@ -119,9 +119,12 @@
       size="25"
       @click="
         toggleFavorite({
-          type: progressKey === 'progress' | progressKey === 'multiplayer' ? 'weapons' : progressKey,
+          type:
+            (progressKey === 'progress') | (progressKey === 'multiplayer')
+              ? 'weapons'
+              : progressKey,
           name: weapon.name,
-        });
+        })
       "
       v-tippy="{
         content: $t('filters.toggle_favorite', {
@@ -178,7 +181,10 @@ export default {
 
     isFavorite() {
       if (!this.store) return false
-      let type = this.progressKey === 'progress' | this.progressKey === 'multiplayer' ? 'weapons' : this.progressKey
+      let type =
+        (this.progressKey === 'progress') | (this.progressKey === 'multiplayer')
+          ? 'weapons'
+          : this.progressKey
       return this.store.isFavorite(type, this.weapon.name)
     },
 

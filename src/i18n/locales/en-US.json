@@ -199,13 +199,13 @@
         "tooltip": "Progress towards completing all Warzone camouflages"
       }
     },
-    "weapons": {
+    "multiplayer": {
       "completed_in_category": "Weapons completed in category",
       "completed_modal": {
         "body": "Congratulations on finishing the Dark Matter camouflage grind! It's been a long ride! You first started tracking your grind here {duration} on {date}.",
         "support_link": "buying me a beer",
         "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
-        "title": "Dark Matter unlocked! 👏🥳"
+        "title": "Multiplayer camouflages completed! 👏🥳"
       },
       "double_click_category_tooltip": "Double-click to toggle category as completed",
       "double_click_tooltip": "Double-click to {state} weapon",
@@ -215,12 +215,12 @@
       "info": "You only need to complete the number of base guns there are for each category to earn the Forged camouflage challenge. For example, the Assault Rifles requires a total of 6 Gilded camouflages to unlock the Forged camouflage challenge for all weapons in that category. Read more {link}.",
       "progress": {
         "label": "Dark Matter progress",
-        "tooltip": "Progress towards the Dark Matter camouflage"
+        "tooltip": "Progress towards completing all multiplayer camouflages"
       }
     },
     "zombies": {
       "completed_modal": {
-        "body": "Congratulations on finishing all zombie camouflages! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
+        "body": "Congratulations on finishing the Nebula camouflage grind! That's quite the feat! You first started tracking your grind here {duration} on {date}.",
         "support_link": "buying me a beer",
         "support": "If you liked this tracker, show your appreciation by spreading the word about it and if you're feeling generous please consider {0} as a thanks. Hope I see you on the battlefield! Cheers! 🍺",
         "title": "Zombie camouflages completed 👏🥳"

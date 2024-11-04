@@ -5,7 +5,7 @@
     </transition>
     <transition name="fadeInUp">
       <div v-show="show" class="modal" :style="{ maxWidth: `${maxWidth}px` }">
-        <div v-if="showHeader" :class="`modal-header ${styleName}`">
+        <div v-if="showHeader" :class="`modal-header ${mode}`">
           <h5>
             <slot name="header"></slot>
           </h5>
@@ -39,16 +39,16 @@ export default {
       default: true,
     },
 
-    styleName: {
-      type: String,
-      required: false,
-      default: undefined,
-    },
-
     maxWidth: {
       type: Number,
       required: false,
       default: 650,
+    },
+
+    mode: {
+      type: String,
+      required: false,
+      default: 'multiplayer',
     },
   },
 
@@ -113,15 +113,15 @@ export default {
     z-index: 2;
 
     .modal-header {
-      &.dark-matter {
+      &.multiplayer {
         background-image: $dark-matter-gradient-alt;
       }
 
-      &.nebula {
+      &.zombies {
         background-image: $nebula-gradient-alt;
       }
 
-      &.abyss {
+      &.warzone {
         background-image: $abyss-gradient-alt;
       }
 

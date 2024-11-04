@@ -1,11 +1,31 @@
 <template>
   <div class="progress">
-    <ModalComponent ref="modal" :style-name="styleName">
+    <ModalComponent ref="modal" :mode="mode">
       <template #header>
-        <slot name="modal-header" />
+        {{ $t(`pages.${mode}.completed_modal.title`) }}
       </template>
 
       <slot name="modal-body" />
+
+      <i18n-t :keypath="`pages.${mode}.completed_modal.body`" tag="p" scope="global">
+        <template #duration>
+          <b>{{ daysSinceStart }} {{ $tc('general.days_ago', daysSinceStart) }}</b>
+        </template>
+
+        <template #date>
+          <b>{{ new Date(getBeganGrind).toLocaleDateString('en-US') }}</b>
+        </template>
+      </i18n-t>
+
+      <i18n-t
+        keypath="pages.mastery.completed_modal.support"
+        tag="p"
+        style="margin-top: 15px; font-size: 14px; color: #aaa"
+        scope="global">
+        <a href="https://www.buymeacoffee.com/emilcarlsson" target="_blank">
+          {{ $t('pages.mastery.completed_modal.support_link') }}
+        </a>
+      </i18n-t>
     </ModalComponent>
 
     <Transition name="slide-up">
@@ -13,12 +33,12 @@
         <div
           class="progress"
           v-tippy="{
-            content: tooltip,
+            content: $t(`pages.${mode}.progress.tooltip`),
             maxWidth: 500,
           }">
-          <div :class="`bar ${styleName}`" :style="{ width: progress + '%' }"></div>
+          <div :class="`bar ${mode}`" :style="{ width: progress + '%' }"></div>
           <label>
-            {{ label }}: <span>{{ progress }}%</span>
+            {{ $t(`pages.${mode}.progress.label`) }}: <span>{{ progress }}%</span>
           </label>
         </div>
       </div>
@@ -27,27 +47,14 @@
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { useStore } from '@/stores/store'
+import { daysBetweenDates, roundToTwoDecimals } from '@/utils/utils'
 import Confetti from '@/utils/confetti'
 
 export default {
   props: {
-    progress: {
-      type: Number,
-      required: true,
-    },
-
-    styleName: {
-      type: String,
-      required: false,
-      default: 'dark-matter',
-    },
-
-    label: {
-      type: String,
-      required: true,
-    },
-
-    tooltip: {
+    mode: {
       type: String,
       required: true,
     },
@@ -57,6 +64,23 @@ export default {
     return {
       showBars: false,
     }
+  },
+
+  computed: {
+    ...mapState(useStore, ['beganGrind', 'weapons']),
+
+    getBeganGrind() {
+      return this.beganGrind ?? new Date()
+    },
+
+    daysSinceStart() {
+      const days = daysBetweenDates(new Date(this.getBeganGrind), new Date())
+      return days ? days : 1
+    },
+
+    progress() {
+      return this.calculateProgress(this.weapons, this.mode)
+    },
   },
 
   watch: {
@@ -76,6 +100,35 @@ export default {
   methods: {
     average(arr) {
       return arr.reduce((p, c) => p + c, 0) / arr.length
+    },
+
+    calculateProgress(weapons, mode) {
+      const requiredWeapons = 33
+
+      // Sort and filter out the weapons with the most progress
+      const mostProgressedWeapons = weapons
+        .map((weapon) => {
+          let totalCamouflages = Object.keys(weapon.progress[mode]).length
+          let completedCamouflages = Object.values(weapon.progress[mode]).reduce((a, b) => a + b, 0)
+
+          return {
+            ...weapon,
+            completed: Object.values(weapon.progress[mode]).reduce((a, b) => a + b, 0),
+            completedPercentage: completedCamouflages / totalCamouflages,
+          }
+        })
+        .sort((a, b) => b.completedPercentage - a.completedPercentage)
+        .splice(0, requiredWeapons)
+
+      // Count the amount of camouflages completed for the most progress weapons
+      const totalCamouflagesCompleted = mostProgressedWeapons.reduce((a, b) => a + b.completed, 0)
+
+      // Count the required amount of camouflages to complete the Dark Matter camouflage
+      const requiredCamouflages = mostProgressedWeapons.reduce((a, b) => {
+        return a + Object.keys(b.progress[mode]).length
+      }, 0)
+
+      return roundToTwoDecimals((totalCamouflagesCompleted / requiredCamouflages) * 100)
     },
 
     handleCompleted() {
@@ -122,15 +175,15 @@ export default {
       height: 100%;
       transition: $transition;
 
-      &.dark-matter {
+      &.multiplayer {
         background-image: $dark-matter-gradient-alt;
       }
 
-      &.nebula {
+      &.zombies {
         background-image: $nebula-gradient-alt;
       }
 
-      &.abyss {
+      &.warzone {
         background-image: $abyss-gradient-alt;
       }
     }

@@ -37,11 +37,11 @@
       class="category">
       <h2>
         <span
-          v-tippy="{ content: $t('pages.weapons.double_click_category_tooltip') }"
+          v-tippy="{ content: $t('pages.multiplayer.double_click_category_tooltip') }"
           @dblclick="toggleCategoryCompleted(title, progressKey)">
           {{ $t('weapon_categories.' + title) }}
         </span>
-        <span v-tippy :content="$t('pages.weapons.completed_in_category')">
+        <span v-tippy :content="$t('pages.multiplayer.completed_in_category')">
           {{ categoryProgress(title) }}
         </span>
       </h2>
@@ -58,7 +58,7 @@
   </transition-group>
 
   <div v-if="Object.keys(weapons).length === 0" class="finished-placeholder">
-    <p>{{ $t('pages.weapons.finished_placeholder') }}</p>
+    <p>{{ $t('pages.multiplayer.finished_placeholder') }}</p>
   </div>
 </template>
 
