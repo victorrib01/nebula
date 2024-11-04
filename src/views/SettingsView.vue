@@ -1,6 +1,24 @@
 <template>
   <div class="settings container">
     <div class="setting">
+      <h3>{{ $t('pages.settings.weapon_completion.title') }}</h3>
+      <p class="subtitle">{{ $t('pages.settings.weapon_completion.description') }}</p>
+      <div class="select">
+        <label for="weapon-completion">{{ $t('pages.settings.weapon_completion.label') }}</label>
+        <select
+          id="weapon-completion"
+          :value="weaponCompletion"
+          @change="updateWeaponCompletion($event.target.value)">
+          <option value="1">{{ $t('pages.settings.weapon_completion.options.1') }}</option>
+          <option value="2">{{ $t('pages.settings.weapon_completion.options.2') }}</option>
+          <option value="3">{{ $t('pages.settings.weapon_completion.options.3') }}</option>
+          <option value="4">{{ $t('pages.settings.weapon_completion.options.4') }}</option>
+        </select>
+        <IconComponent name="angle-down" />
+      </div>
+    </div>
+
+    <div class="setting">
       <h3>{{ $t('pages.settings.export.title') }}</h3>
       <p class="subtitle">{{ $t('pages.settings.export.description') }}</p>
       <textarea v-model="exportJson" />
@@ -92,7 +110,7 @@ export default {
   },
 
   computed: {
-    ...mapState(useStore, ['callingCards', 'weapons']),
+    ...mapState(useStore, ['callingCards', 'weapons', 'preferences']),
 
     exportJson() {
       return JSON.stringify({
@@ -100,10 +118,27 @@ export default {
         callingCards: { ...this.callingCards },
       })
     },
+
+    weaponCompletion() {
+      return this.preferences.weaponCompletion
+    },
   },
 
   methods: {
-    ...mapActions(useStore, ['setWeapons', 'setCallingCards', 'storeProgress', 'resetProgress']),
+    ...mapActions(useStore, [
+      'setWeapons',
+      'setCallingCards',
+      'storeProgress',
+      'resetProgress',
+      'setPreferences',
+    ]),
+
+    updateWeaponCompletion(value) {
+      const preferences = JSON.parse(JSON.stringify(this.preferences))
+      preferences.weaponCompletion = value
+      this.setPreferences(preferences)
+      this.storeProgress()
+    },
 
     confirmReset() {
       this.resetProgress()
@@ -286,6 +321,15 @@ export default {
 
   textarea {
     margin-bottom: 20px;
+  }
+
+  .select {
+    display: inline-block;
+    margin-top: 25px;
+
+    label {
+      font-weight: 600;
+    }
   }
 
   .actions {

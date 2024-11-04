@@ -113,18 +113,29 @@ export default {
 
       return completed >= required
     },
+
+    weaponCompletion() {
+      return this.preferences.weaponCompletion
+    },
   },
 
   methods: {
     ...mapActions(useStore, ['toggleCategoryCompleted', 'unfavoriteAll']),
 
     categoryProgress(title) {
+      const modeCamouflages = {
+        multiplayer: ['Gold', 'Diamond', 'Dark Spine', 'Dark Matter'],
+        zombies: ['Mystic Gold', 'Opal', 'Afterlife', 'Nebula'],
+        warzone: ["King's Ransom", 'Gold Tiger', 'Catalyst', 'Abyssal'],
+      }
+
       const categoryWeapons = this.weapons[title]
       const total = categoryWeapons.filter((weapon) => !weapon.comingSoon).length
-      const completed = categoryWeapons.reduce(
-        (a, weapon) => a + Object.values(weapon.progress[this.progressKey]).every(Boolean),
-        0
-      )
+
+      const completed = categoryWeapons.reduce((a, weapon) => {
+        const camouflage = modeCamouflages[this.progressKey][this.weaponCompletion - 1]
+        return a + (weapon.progress[this.progressKey][camouflage] ? 1 : 0)
+      }, 0)
 
       return completed > total ? `${total}/${total}` : `${Math.floor(completed)}/${total}`
     },

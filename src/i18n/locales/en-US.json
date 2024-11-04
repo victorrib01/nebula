@@ -197,6 +197,17 @@
         "reset_my_progress": "Reset my progress",
         "title": "Reset all progress",
         "warning": "This action is irreversible if you haven't exported your progress."
+      },
+      "weapon_completion": {
+        "title": "Weapon completion",
+        "description": "Choose which camouflage should be considered as completed for each weapon. This is useful if you want to track your progress towards a specific camouflage stage. For example, if you want to track your progress in stages towards the end goal, rather than just the final stage.",
+        "label": "Weapon completion stage",
+        "options": {
+          "1": "Gold / Mythic Gold / Gold Tiger",
+          "2": "Diamond / Opal / King's Ransom",
+          "3": "Dark Spine / Afterlife / Catalyst",
+          "4": "Dark Matter / Nebula / Abyss"
+        }
       }
     },
     "warzone": {
