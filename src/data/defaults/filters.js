@@ -1,5 +1,17 @@
 export default {
+  hideAbyss: false,
+  hideAfterlife: false,
+  hideCatalyst: false,
+  hideDarkMatter: false,
+  hideDarkSpine: false,
+  hideDiamond: false,
   hideFilters: false,
+  hideGold: false,
+  hideGoldTiger: false,
+  hideKingsRansom: false,
+  hideMysticGold: false,
+  hideNebula: false,
+  hideOpal: false,
   search: '',
   weaponCategory: null,
 }

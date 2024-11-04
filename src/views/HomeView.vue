@@ -55,15 +55,57 @@ export default {
           type: 'select',
           options: this.weaponCategories,
         },
+        {
+          label: this.$t('filters.hide_gold'),
+          key: 'hideGold',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_diamond'),
+          key: 'hideDiamond',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_dark_spine'),
+          key: 'hideDarkSpine',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_dark_matter'),
+          key: 'hideDarkMatter',
+          type: 'checkbox',
+        },
       ]
     },
 
     filteredWeapons() {
       let filteredWeapons = this.weapons
-      const { weaponCategory } = this.filters
+      const { hideGold, hideDiamond, hideDarkSpine, hideDarkMatter, weaponCategory } = this.filters
 
       if (weaponCategory && weaponCategory !== 'null') {
         filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === weaponCategory)
+      }
+
+      if (hideGold) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.multiplayer['Gold'])
+      }
+
+      if (hideDiamond) {
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.multiplayer['Diamond']
+        )
+      }
+
+      if (hideDarkSpine) {
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.multiplayer['Dark Spine']
+        )
+      }
+
+      if (hideDarkMatter) {
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.multiplayer['Dark Matter']
+        )
       }
 
       return groupBy(filteredWeapons, (weapon) => weapon.category)

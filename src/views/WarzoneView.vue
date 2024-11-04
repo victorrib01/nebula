@@ -55,15 +55,54 @@ export default {
           type: 'select',
           options: this.weaponCategories,
         },
+        {
+          label: this.$t('filters.hide_gold_tiger'),
+          key: 'hideGoldTiger',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_kings_ransom'),
+          key: 'hideKingsRansom',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_catalyst'),
+          key: 'hideCatalyst',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_abyss'),
+          key: 'hideAbyss',
+          type: 'checkbox',
+        },
       ]
     },
 
     filteredWeapons() {
       let filteredWeapons = this.weapons
-      const { weaponCategory } = this.filters
+      const { hideGoldTiger, hideKingsRansom, hideCatalyst, hideAbyss, weaponCategory } =
+        this.filters
 
       if (weaponCategory && weaponCategory !== 'null') {
         filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === weaponCategory)
+      }
+
+      if (hideGoldTiger) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.warzone['Gold Tiger'])
+      }
+
+      if (hideKingsRansom) {
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.warzone["King's Ransom"]
+        )
+      }
+
+      if (hideCatalyst) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.warzone['Catalyst'])
+      }
+
+      if (hideAbyss) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.warzone['Abyss'])
       }
 
       return groupBy(filteredWeapons, (weapon) => weapon.category)

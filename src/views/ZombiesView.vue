@@ -55,15 +55,53 @@ export default {
           type: 'select',
           options: this.weaponCategories,
         },
+        {
+          label: this.$t('filters.hide_mystic_gold'),
+          key: 'hideMysticGold',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_opal'),
+          key: 'hideOpal',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_afterlife'),
+          key: 'hideAfterlife',
+          type: 'checkbox',
+        },
+        {
+          label: this.$t('filters.hide_nebula'),
+          key: 'hideNebula',
+          type: 'checkbox',
+        },
       ]
     },
 
     filteredWeapons() {
       let filteredWeapons = this.weapons
-      const { weaponCategory } = this.filters
+      const { hideMysticGold, hideOpal, hideAfterlife, hideNebula, weaponCategory } = this.filters
 
       if (weaponCategory && weaponCategory !== 'null') {
         filteredWeapons = filteredWeapons.filter((weapon) => weapon.category === weaponCategory)
+      }
+
+      if (hideMysticGold) {
+        filteredWeapons = filteredWeapons.filter(
+          (weapon) => !weapon.progress.zombies['Mystic Gold']
+        )
+      }
+
+      if (hideOpal) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.zombies['Opal'])
+      }
+
+      if (hideAfterlife) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.zombies['Afterlife'])
+      }
+
+      if (hideNebula) {
+        filteredWeapons = filteredWeapons.filter((weapon) => !weapon.progress.zombies['Nebula'])
       }
 
       return groupBy(filteredWeapons, (weapon) => weapon.category)

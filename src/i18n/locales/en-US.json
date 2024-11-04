@@ -38,7 +38,19 @@
     "zombies": "Zombies"
   },
   "filters": {
+    "hide_abyss": "Hide Abyss",
+    "hide_afterlife": "Hide Afterlife",
+    "hide_catalyst": "Hide Catalyst",
     "hide_completed": "Hide completed",
+    "hide_dark_matter": "Hide Dark Matter",
+    "hide_dark_spine": "Hide Dark Spine",
+    "hide_diamond": "Hide Diamond",
+    "hide_gold_tiger": "Hide Gold Tiger",
+    "hide_gold": "Hide Gold",
+    "hide_kings_ransom": "Hide King's Ransom",
+    "hide_mystic_gold": "Hide Mystic Gold",
+    "hide_nebula": "Hide Nebula",
+    "hide_opal": "Hide Opal",
     "toggle_favorite": "{state} favorites",
     "toggle_favorites": "Toggle favorites",
     "toggle_layout": "Toggle layout"
