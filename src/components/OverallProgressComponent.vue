@@ -8,7 +8,8 @@
         :alt="name"
         onerror="javascript:this.src='/military-gradient.svg'" />
       <p>
-        {{ name }} {{ $t('general.unlocked') }} <span>{{ counter }}/{{ totalWeapons }}</span>
+        <span>{{ name }} {{ $t('general.unlocked') }}</span>
+        <span>{{ counter }}/{{ totalWeapons }}</span>
       </p>
     </div>
   </div>
@@ -80,7 +81,7 @@ export default {
     justify-content: center;
 
     + .counter {
-      margin-left: 25px;
+      margin-left: 40px;
     }
 
     img {
@@ -99,25 +100,37 @@ export default {
       cursor: default;
       font-weight: 400;
 
-      span {
+      span:first-child {
+        margin-right: 5px;
+      }
+
+      span:last-child {
         font-weight: 600;
       }
     }
   }
 
   @media (max-width: $tablet) {
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
     margin-top: 0;
 
     .counter + .counter {
       margin-left: 0;
     }
+
+    .counter p span:first-child {
+      display: none;
+    }
   }
 
   @media (max-width: $mobile) {
     align-items: flex-start;
     flex-direction: column;
+
+    .counter p span:first-child {
+      display: inline-block;
+    }
   }
 }
 </style>
