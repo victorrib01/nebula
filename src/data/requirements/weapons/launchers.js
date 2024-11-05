@@ -55,10 +55,10 @@ export default {
         ...specialCamouflages[weapon]?.multiplayer,
 
         // Mastery
-        'Gold': { amount: 5, type: 'kills_without_dying', times: 3 },
-        'Diamond': { amount: 3, type: 'kills_without_dying', times: 10 },
-        'Dark Spine': { amount: 3, type: 'triple_kills' },
-        'Dark Matter': { amount: 5, type: 'kills_without_dying', times: 3 },
+        'Gold': { amount: 3, type: 'destructions_sm', times: 10 },
+        'Diamond': { amount: 3, type: 'kills_sm', times: 10 },
+        'Dark Spine': { amount: 5, type: 'destructions_sm', times: 3 },
+        'Dark Matter': { amount: 5, type: 'kills_sm', times: 3 },
       },
 
       zombies: {
