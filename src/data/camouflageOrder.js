@@ -5,7 +5,7 @@ const militaryOrder = [
   'Savanna',
   'Splinter',
   'Moss',
-  'Shade',
+  'Saboteur',
   'Digital',
   'Tide',
   'Red Tiger',
