@@ -1,0 +1,1 @@
+export default ["Combat Scenarios", "Versatility", "Anytime, Anywhere", "Extreme Lethality", "Forged To Kill", "Perks Of The Job", "Field Operations", "Lay Waste", "Aces Are Wild", "Above & Beyond", "Perfectly Tuned"]

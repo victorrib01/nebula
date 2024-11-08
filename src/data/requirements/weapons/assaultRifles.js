@@ -131,7 +131,7 @@ export default {
         'Savanna': { amount: 15, type: 'headshots' },
         'Splinter': { amount: 20, type: 'headshots' },
         'Moss': { amount: 30, type: 'headshots' },
-        'Shade': { amount: 40, type: 'headshots' },
+        'Saboteur': { amount: 40, type: 'headshots' },
         'Digital': { amount: 50, type: 'headshots' },
         'Tide': { amount: 75, type: 'headshots' },
         'Red Tiger': { amount: 100, type: 'headshots' },

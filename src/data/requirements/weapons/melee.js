@@ -46,7 +46,7 @@ export default {
         'Savanna': { amount: 15, type: 'kills' },
         'Splinter': { amount: 20, type: 'kills' },
         'Moss': { amount: 30, type: 'kills' },
-        'Shade': { amount: 40, type: 'kills' },
+        'Saboteur': { amount: 40, type: 'kills' },
         'Digital': { amount: 50, type: 'kills' },
         'Tide': { amount: 75, type: 'kills' },
         'Red Tiger': { amount: 100, type: 'kills' },

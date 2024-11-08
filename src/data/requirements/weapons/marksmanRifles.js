@@ -26,7 +26,7 @@ const specialCamouflages = {
 
     zombies: {
       'Harvest': { amount: 100, type: 'zombie_kills_while_affected_by_tactical' },
-      '?': null,
+      'Desert Sunset': { amount: 300, type: 'kills_with_dead_wire_equipped'},
     },
 
     warzone: {
@@ -80,7 +80,7 @@ export default {
         'Savanna': { amount: 15, type: 'headshots' },
         'Splinter': { amount: 20, type: 'headshots' },
         'Moss': { amount: 30, type: 'headshots' },
-        'Shade': { amount: 40, type: 'headshots' },
+        'Saboteur': { amount: 40, type: 'headshots' },
         'Digital': { amount: 50, type: 'headshots' },
         'Tide': { amount: 75, type: 'headshots' },
         'Red Tiger': { amount: 100, type: 'headshots' },

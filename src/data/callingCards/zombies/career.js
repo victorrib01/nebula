@@ -1,0 +1,1 @@
+export default ["Fresh Meat", "Trophy Hunter", "Quarentined"]
