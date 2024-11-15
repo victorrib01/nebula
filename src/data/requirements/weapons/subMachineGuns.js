@@ -102,6 +102,23 @@ const specialCamouflages = {
       '??': null,
     },
   },
+
+  'Saug': {
+    multiplayer: {
+      'Netherworld': { amount: 30, type: 'point_blank_kills' },
+      'Solar Tide': { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      '?': null,
+      '??': null,
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
 }
 
 export default {

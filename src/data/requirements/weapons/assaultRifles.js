@@ -119,6 +119,24 @@ const specialCamouflages = {
       '??': null,
     },
   },
+
+  'Krig C': {
+    multiplayer: {
+      Monochrome: { amount: 30, type: 'kills_shortly_after_sprinting' },
+      Dreadshade: { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      '?': null,
+      '??': null,
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
 }
 
 export default {
