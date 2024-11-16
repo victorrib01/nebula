@@ -20,7 +20,7 @@ const specialCamouflages = {
 
   'KSV': {
     multiplayer: {
-      Kakapo: { amount: 2, type: 'kills_without_reloading' },
+      Kakapo: { amount: 2, type: 'kills_without_reloading', times: 10 },
       Throwback: { amount: 50, type: 'kills_while_moving' },
     },
 
@@ -102,6 +102,23 @@ const specialCamouflages = {
       '??': null,
     },
   },
+
+  'Saug': {
+    multiplayer: {
+      'Netherworld': { amount: 30, type: 'point_blank_kills' },
+      'Solar Tide': { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      '?': null,
+      '??': null,
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
 }
 
 export default {
@@ -114,7 +131,7 @@ export default {
         'Savanna': { amount: 15, type: 'headshots' },
         'Splinter': { amount: 20, type: 'headshots' },
         'Moss': { amount: 30, type: 'headshots' },
-        'Shade': { amount: 40, type: 'headshots' },
+        'Saboteur': { amount: 40, type: 'headshots' },
         'Digital': { amount: 50, type: 'headshots' },
         'Tide': { amount: 75, type: 'headshots' },
         'Red Tiger': { amount: 100, type: 'headshots' },

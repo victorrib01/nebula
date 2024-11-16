@@ -14,11 +14,11 @@ const routes = [
     name: '404',
     component: NotFoundView,
   },
-  //{
-  //  path: '/calling-cards',
-  //  name: 'calling-cards',
-  //  component: () => import('../views/CallingCardsView.vue'),
-  //},
+ //{
+ //  path: '/calling-cards',
+ //  name: 'calling-cards',
+ //  component: () => import('../views/CallingCardsView.vue'),
+ //},
   {
     path: '/zombies',
     name: 'zombies',
@@ -44,6 +44,7 @@ const routes = [
     name: 'settings',
     component: () => import('../views/SettingsView.vue'),
   },
+  
 ]
 
 const router = createRouter({

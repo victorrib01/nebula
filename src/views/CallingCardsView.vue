@@ -43,7 +43,7 @@ export default {
   },
 
   computed: {
-    ...mapState(useStore, ['weapons', 'filters']),
+    ...mapState(useStore, ['gamemode', 'filters']),
 
     filterOptions() {
       return [

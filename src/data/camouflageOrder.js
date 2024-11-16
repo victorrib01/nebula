@@ -5,7 +5,7 @@ const militaryOrder = [
   'Savanna',
   'Splinter',
   'Moss',
-  'Shade',
+  'Saboteur',
   'Digital',
   'Tide',
   'Red Tiger',
@@ -69,6 +69,10 @@ const specialOrder = [
   'Malachite',
   'Mountain Goat',
 
+  // Krig C
+  'Monochrome',
+  'Dreadshade',
+
   // C9
   'Heatwave',
   'Panther',
@@ -104,6 +108,10 @@ const specialOrder = [
   'Blackthorn',
   'Tequila Sunset',
   'Voidthorn',
+
+  // Saug
+  'Netherworld',
+  'Solar Tide',
 
   // PU-21
   'Neon Bath',

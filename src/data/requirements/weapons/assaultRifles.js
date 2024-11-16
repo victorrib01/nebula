@@ -119,6 +119,24 @@ const specialCamouflages = {
       '??': null,
     },
   },
+
+  'Krig C': {
+    multiplayer: {
+      Monochrome: { amount: 30, type: 'kills_shortly_after_sprinting' },
+      Dreadshade: { amount: 50, type: 'kills_while_moving' },
+    },
+
+    zombies: {
+      '?': null,
+      '??': null,
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
+
 }
 
 export default {
@@ -131,7 +149,7 @@ export default {
         'Savanna': { amount: 15, type: 'headshots' },
         'Splinter': { amount: 20, type: 'headshots' },
         'Moss': { amount: 30, type: 'headshots' },
-        'Shade': { amount: 40, type: 'headshots' },
+        'Saboteur': { amount: 40, type: 'headshots' },
         'Digital': { amount: 50, type: 'headshots' },
         'Tide': { amount: 75, type: 'headshots' },
         'Red Tiger': { amount: 100, type: 'headshots' },

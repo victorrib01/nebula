@@ -1,0 +1,1 @@
+export default ["Killer", "Humiliation", "Going Ham"]

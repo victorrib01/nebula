@@ -46,7 +46,7 @@ export default {
         'Savanna': { amount: 10, type: 'scorestreaks' },
         'Splinter': { amount: 15, type: 'scorestreaks' },
         'Moss': { amount: 20, type: 'scorestreaks' },
-        'Shade': { amount: 25, type: 'scorestreaks' },
+        'Saboteur': { amount: 25, type: 'scorestreaks' },
         'Digital': { amount: 30, type: 'scorestreaks' },
         'Tide': { amount: 40, type: 'scorestreaks' },
         'Red Tiger': { amount: 50, type: 'scorestreaks' },
