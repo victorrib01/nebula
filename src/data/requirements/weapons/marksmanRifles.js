@@ -37,7 +37,7 @@ const specialCamouflages = {
 
   'AEK-973': {
     multiplayer: {
-      Ablaze: { amount: 2, type: 'kills_without_reloading' },
+      Ablaze: { amount: 2, type: 'kills_without_reloading', times: 10 },
       Mirage: { amount: 50, type: 'kills_with_4x_or_higher_magnification_scope' },
     },
 
