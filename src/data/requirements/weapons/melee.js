@@ -34,6 +34,23 @@ const specialCamouflages = {
       '??': null,
     },
   },
+
+  'Power Drill': {
+    multiplayer: {
+      '?': null,
+      '??': null,
+    },
+
+    zombies: {
+      '?': null,
+      '??': null,
+    },
+
+    warzone: {
+      '?': null,
+      '??': null,
+    },
+  },
 }
 
 export default {
