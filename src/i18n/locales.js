@@ -1,9 +1,11 @@
 import enUS from './locales/en-US.json'
+import arSA from './locales/ar-SA.json'
 
 export const translatedBy = {
-  // 'en-US': { github: 'https://github.com/username', name: 'Your Name' },
+  'ar-SA': { github: 'https://github.com/mo9a7i', name: 'Mohannad Otaibi' },
 }
 
 export default {
   'en-US': enUS,
+  'ar-SA': arSA
 }
