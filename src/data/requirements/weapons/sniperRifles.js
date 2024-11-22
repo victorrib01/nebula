@@ -26,7 +26,7 @@ const specialCamouflages = {
 
     zombies: {
       Cartridge: { amount: 300, type: 'kills_while_pack_a_punched' },
-      Integration: { amount: 5, type: 'critical_kills', times: 15 },
+      Integration: { amount: 5, type: 'critical_kills_rapidly', times: 15 },
     },
 
     warzone: {
