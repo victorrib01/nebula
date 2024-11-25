@@ -72,6 +72,9 @@ const specialOrder = [
   // Krig C
   'Monochrome',
   'Dreadshade',
+  'Sunny Splash',
+  'Crowsbane',
+
 
   // C9
   'Heatwave',
