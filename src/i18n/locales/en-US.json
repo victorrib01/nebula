@@ -39,6 +39,7 @@
     "support_notice_link": "buying me a beer",
     "support_notice": "If you like this tracker, show your appreciation by {link} 🍺",
     "translated_by": ", translated by {0}",
+    "tools": "Tools",
     "weapon": "Weapon | Weapons",
     "unlocked": "unlocked",
     "warzone": "Warzone",
@@ -124,7 +125,10 @@
       "support_me_description": "You can support me by {0} 🍺, it'd be greatly appreciated!",
       "support_me_link": "buying me a beer",
       "support_me": "Support me",
-      "title": "Simple, lightweight & intuitive"
+      "title": "Simple, lightweight & intuitive",
+      "tools": "Tools",
+      "tools_description": "Looking for other useful tools created by some amazing people to help you complete your camouflages faster? You can find a list of them {0} on our tools page.",
+      "tools_link": "here"
     },
     "calling_cards": {
       "completed_in_category": "Calling Cards completed in category",
@@ -217,6 +221,10 @@
           "4": "Dark Matter / Nebula / Abyss"
         }
       }
+    },
+    "tools": {
+      "title": "Tools",
+      "subtitle": "Useful tools by some other amazing people to help you complete your camouflages faster."
     },
     "warzone": {
       "completed_modal": {
