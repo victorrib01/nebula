@@ -1,14 +1,14 @@
 {
-    "general": {
-        "about": "Sobre",
-      "alert": {
-        "development_notice": "O rastreador está em desenvolvimento ativo e pode conter bugs ou recursos incompletos.",
+  "general": {
+    "about": "Sobre",
+    "alert": {
+      "development_notice": "O rastreador está em desenvolvimento ativo e pode conter bugs ou recursos incompletos.",
       "encounter_issues": "Se você encontrar algum problema, por favor ",
       "missing_images_notice": "Estamos cientes das imagens de camuflagem ausentes e requisitos incorretos.",
       "thank_you": "Obrigado pela sua compreensão e boa diversão!",
       "report_link_text": "relate no GitHub"
-      },
-      "add_to": "Adicionar a",
+    },
+    "add_to": "Adicionar a",
     "all": "Todos",
     "calling_cards": "Cartão de Visita | Cartões de Visita",
     "camouflage": "Camuflagem | Camuflagens",
@@ -44,9 +44,9 @@
     "unlocked": "desbloqueado",
     "warzone": "Warzone",
     "zombies": "Zumbis"
-    },
-    "filters": {
-      "hide_abyss": "Ocultar Abyss",
+  },
+  "filters": {
+    "hide_abyss": "Ocultar Abyss",
     "hide_afterlife": "Ocultar Afterlife",
     "hide_catalyst": "Ocultar Catalyst",
     "hide_completed": "Ocultar concluído",
@@ -62,14 +62,15 @@
     "toggle_favorite": "{state} favoritos",
     "toggle_favorites": "Alternar favoritos",
     "toggle_layout": "Alternar layout"
-    },
-    "locales": {
-      "en-US": "Inglês",
-    "ar-SA": "العربية"
-    },
-    "pages": {
-      "404": {
-        "description": "Poxa, parece que você {0}.",
+  },
+  "locales": {
+    "en-US": "English",
+    "ar-SA": "العربية",
+    "pt-BR": "Português"
+  },
+  "pages": {
+    "404": {
+      "description": "Poxa, parece que você {0}.",
       "scenarios": [
         "errou a curva em Nuketown e acabou em uma página inexistente 🏘️",
         "ficou preso no respawn e acabou em uma página inexistente 💥",
@@ -92,248 +93,248 @@
         "tentou se reunir com o Ghost e acabou em uma página inexistente 👻",
         "procurou Easter eggs no lugar errado e acabou em uma página inexistente 🥚"
       ],
-        "link": "Voltar para a página inicial"
-},
-"about": {
-  "features": {
-    "autosaving": {
-      "title": "Salvamento Automático",
-      "description": "Seu progresso é salvo e armazenado automaticamente. Não é necessário criar uma conta."
+      "link": "Voltar para a página inicial"
     },
-    "responsive": {
-      "title": "Responsivo",
-      "description": "O rastreador funciona em todos os dispositivos, de desktop a mobile."
+    "about": {
+      "features": {
+        "autosaving": {
+          "title": "Salvamento Automático",
+          "description": "Seu progresso é salvo e armazenado automaticamente. Não é necessário criar uma conta."
+        },
+        "responsive": {
+          "title": "Responsivo",
+          "description": "O rastreador funciona em todos os dispositivos, de desktop a mobile."
+        },
+        "export_import": {
+          "title": "Exportar/Importar",
+          "description": "Exporte seu progresso para um arquivo e importe-o em outro dispositivo."
+        },
+        "filterable": {
+          "title": "Filtrável",
+          "description": "Alterne facilmente entre categorias de armas e marque como concluído/desmarque."
+        },
+        "ad_free": {
+          "title": "Sem anúncios",
+          "description": "Sem anúncios irritantes ocupando espaço no site. Nem agora, nem nunca."
+        }
+      },
+      "open_source_description": "Desenvolvido com {0}, hospedado em {1} e com análise por {2}. O código deste site está disponível em {3}.",
+      "open_source": "Código aberto",
+      "previous_trackers_description": "Procurando rastreadores de camuflagens para os jogos anteriores de Call of Duty desde 2019?",
+      "previous_trackers": "Rastreadores anteriores",
+      "subtitle": "Acompanhe seu progresso nas camuflagens Dark Matter, Nebula e Abyss com este rastreador fácil de usar.",
+      "support_me_description": "Você pode me apoiar {0} 🍺, será muito apreciado!",
+      "support_me_link": "comprando-me uma cerveja",
+      "support_me": "Apoie-me",
+      "title": "Simples, leve e intuitivo",
+      "tools": "Ferramentas",
+      "tools_description": "Procurando outras ferramentas úteis criadas por pessoas incríveis para ajudá-lo a completar suas camuflagens mais rapidamente? Você pode encontrar uma lista delas {0} na nossa página de ferramentas.",
+      "tools_link": "aqui"
     },
-    "export_import": {
-      "title": "Exportar/Importar",
-      "description": "Exporte seu progresso para um arquivo e importe-o em outro dispositivo."
+    "calling_cards": {
+      "completed_in_category": "Cartões de Visita concluídos na categoria",
+      "empty_search": "Sua busca não correspondeu a nenhum Cartão de Visita 🤔",
+      "finished_placeholder": "Você concluiu todos os desafios de Cartão de Visita 👏"
     },
-    "filterable": {
-      "title": "Filtrável",
-      "description": "Alterne facilmente entre categorias de armas e marque como concluído/desmarque."
+    "mastery": {
+      "completed_modal": {
+        "body": "Parabéns por concluir todos os desafios de maestria! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
+        "support_link": "comprando-me uma cerveja",
+        "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
+        "title": "Desafios de maestria concluídos 👏🥳"
+      },
+      "info": "Uma vez que você desbloqueia cada camuflagem de maestria, um desafio de maestria é desbloqueado, exigindo que você obtenha uma certa quantidade de abates usando essa camuflagem específica para concluí-lo.",
+      "progress": {
+        "label": "Progresso de maestria",
+        "tooltip": "Progresso para concluir todos os desafios de maestria"
+      }
     },
-    "ad_free": {
-      "title": "Sem anúncios",
-      "description": "Sem anúncios irritantes ocupando espaço no site. Nem agora, nem nunca."
-    }
-  },
-  "open_source_description": "Desenvolvido com {0}, hospedado em {1} e com análise por {2}. O código deste site está disponível em {3}.",
-  "open_source": "Código aberto",
-  "previous_trackers_description": "Procurando rastreadores de camuflagens para os jogos anteriores de Call of Duty desde 2019?",
-  "previous_trackers": "Rastreadores anteriores",
-  "subtitle": "Acompanhe seu progresso nas camuflagens Dark Matter, Nebula e Abyss com este rastreador fácil de usar.",
-  "support_me_description": "Você pode me apoiar {0} 🍺, será muito apreciado!",
-  "support_me_link": "comprando-me uma cerveja",
-  "support_me": "Apoie-me",
-  "title": "Simples, leve e intuitivo",
-  "tools": "Ferramentas",
-  "tools_description": "Procurando outras ferramentas úteis criadas por pessoas incríveis para ajudá-lo a completar suas camuflagens mais rapidamente? Você pode encontrar uma lista delas {0} na nossa página de ferramentas.",
-  "tools_link": "aqui"
-}
-,
-"calling_cards": {
-  "completed_in_category": "Cartões de Visita concluídos na categoria",
-  "empty_search": "Sua busca não correspondeu a nenhum Cartão de Visita 🤔",
-  "finished_placeholder": "Você concluiu todos os desafios de Cartão de Visita 👏"
-},
-"mastery": {
-  "completed_modal": {
-    "body": "Parabéns por concluir todos os desafios de maestria! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
-    "support_link": "comprando-me uma cerveja",
-    "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
-    "title": "Desafios de maestria concluídos 👏🥳"
-  },
-  "info": "Uma vez que você desbloqueia cada camuflagem de maestria, um desafio de maestria é desbloqueado, exigindo que você obtenha uma certa quantidade de abates usando essa camuflagem específica para concluí-lo.",
-  "progress": {
-    "label": "Progresso de maestria",
-    "tooltip": "Progresso para concluir todos os desafios de maestria"
-  }
-},
-"requirements": {
-  "checklist": {
-    "military": "Camuflagens militares em 33 armas",
-    "special": "Camuflagens especiais em 33 armas",
-    "gold": "Camuflagem dourada em 33 armas",
-    "diamond": "Camuflagem de diamante em 33 armas",
-    "dark_spine": "Camuflagem Dark Spine em 33 armas"
-  },
-  "description": "Para desbloquear qualquer uma das camuflagens de maestria, você precisa desbloquear o estágio anterior da camuflagem. Por exemplo, para desbloquear a camuflagem Dark Matter, os seguintes requisitos devem ser atendidos: {checklist}. Conforme você avança pelos estágios de camuflagem, desbloqueará o próximo estágio:",
-  "stages": {
-    "military": "Militar",
-    "special": "Especial",
-    "gold": "Dourado",
-    "diamond": "Diamante",
-    "dark_spine": "Dark Spine",
-    "dark_matter": "Dark Matter"
-  },
-  "table": {
-    "headers": {
-      "requirement": "Requisito",
-      "stage": "Estágio"
+    "requirements": {
+      "checklist": {
+        "military": "Camuflagens militares em 33 armas",
+        "special": "Camuflagens especiais em 33 armas",
+        "gold": "Camuflagem dourada em 33 armas",
+        "diamond": "Camuflagem de diamante em 33 armas",
+        "dark_spine": "Camuflagem Dark Spine em 33 armas"
+      },
+      "description": "Para desbloquear qualquer uma das camuflagens de maestria, você precisa desbloquear o estágio anterior da camuflagem. Por exemplo, para desbloquear a camuflagem Dark Matter, os seguintes requisitos devem ser atendidos: {checklist}. Conforme você avança pelos estágios de camuflagem, desbloqueará o próximo estágio:",
+      "stages": {
+        "military": "Militar",
+        "special": "Especial",
+        "gold": "Dourado",
+        "diamond": "Diamante",
+        "dark_spine": "Dark Spine",
+        "dark_matter": "Dark Matter"
+      },
+      "table": {
+        "headers": {
+          "requirement": "Requisito",
+          "stage": "Estágio"
+        },
+        "stage_requirements": {
+          "military": "Camuflagens militares exigem que você conclua cada desafio progressivamente.",
+          "special": "Depois de desbloquear as camuflagens militares, você desbloqueia os desafios de camuflagens especiais para aquela arma específica.",
+          "gold": "Depois de desbloquear as camuflagens especiais, você desbloqueia o desafio de camuflagem dourada para aquela arma específica.",
+          "diamond": "Após concluir todos os desafios de camuflagem dourada de uma categoria específica, você desbloqueia o desafio de camuflagem de diamante para aquela arma específica.",
+          "dark_spine": "Depois de desbloquear a camuflagem de diamante para todas as categorias e armas, você então desbloqueia o desafio de camuflagem Dark Spine para cada arma.",
+          "dark_matter": "Finalmente, após concluir todos os desafios de camuflagem anteriores, o desafio Dark Matter é desbloqueado."
+        },
+        "subtitle": "Para chegar ao próximo estágio de camuflagem, você precisa primeiro desbloquear o estágio anterior:",
+        "title": "Como desbloqueio cada estágio de camuflagem?"
+      },
+      "title": "Como desbloqueio as camuflagens de maestria?"
     },
-    "stage_requirements": {
-      "military": "Camuflagens militares exigem que você conclua cada desafio progressivamente.",
-      "special": "Depois de desbloquear as camuflagens militares, você desbloqueia os desafios de camuflagens especiais para aquela arma específica.",
-      "gold": "Depois de desbloquear as camuflagens especiais, você desbloqueia o desafio de camuflagem dourada para aquela arma específica.",
-      "diamond": "Após concluir todos os desafios de camuflagem dourada de uma categoria específica, você desbloqueia o desafio de camuflagem de diamante para aquela arma específica.",
-      "dark_spine": "Depois de desbloquear a camuflagem de diamante para todas as categorias e armas, você então desbloqueia o desafio de camuflagem Dark Spine para cada arma.",
-      "dark_matter": "Finalmente, após concluir todos os desafios de camuflagem anteriores, o desafio Dark Matter é desbloqueado."
+    "settings": {
+      "export": {
+        "copy_to_clipboard": "Copiar para a área de transferência",
+        "description": "Exporte seu progresso para outro dispositivo ou navegador.",
+        "download_as_file": "Baixar como arquivo",
+        "title": "Exportar progresso"
+      },
+      "import": {
+        "description": "Importe seu progresso de outro dispositivo ou navegador, colando o código exportado ou carregando o arquivo exportado.",
+        "import_code": "Importar código",
+        "import_disabled_tooltip": "Você precisa inserir o código no campo acima.",
+        "import_from_file": "Importar de arquivo",
+        "placeholder": "Cole o código aqui ou importe do arquivo abaixo.",
+        "title": "Importar progresso"
+      },
+      "reset": {
+        "confirm": {
+          "body": "Você tem certeza de que deseja redefinir todo o seu progresso?",
+          "cancel": "Cancelar",
+          "reset": "Redefinir",
+          "title": "Redefinir todo o progresso"
+        },
+        "description": "Esta ação redefinirá todo o seu progresso e começará do zero.",
+        "reset_my_progress": "Redefinir meu progresso",
+        "title": "Redefinir todo o progresso",
+        "warning": "Esta ação é irreversível se você não exportou seu progresso."
+      },
+      "weapon_completion": {
+        "title": "Conclusão de armas",
+        "description": "Escolha qual camuflagem deve ser considerada como concluída para cada arma. Isso é útil se você quiser acompanhar seu progresso em direção a um estágio específico de camuflagem. Por exemplo, se você quiser rastrear seu progresso em etapas até o objetivo final, em vez de apenas o estágio final.",
+        "label": "Estágio de conclusão da arma",
+        "options": {
+          "1": "Dourado / Ouro Mítico / Tigre Dourado",
+          "2": "Diamante / Opala / King's Ransom",
+          "3": "Dark Spine / Afterlife / Catalyst",
+          "4": "Dark Matter / Nebula / Abyss"
+        }
+      }
     },
-    "subtitle": "Para chegar ao próximo estágio de camuflagem, você precisa primeiro desbloquear o estágio anterior:",
-    "title": "Como desbloqueio cada estágio de camuflagem?"
-  },
-  "title": "Como desbloqueio as camuflagens de maestria?"
-},
-"settings": {
-  "export": {
-    "copy_to_clipboard": "Copiar para a área de transferência",
-    "description": "Exporte seu progresso para outro dispositivo ou navegador.",
-    "download_as_file": "Baixar como arquivo",
-    "title": "Exportar progresso"
-  },
-  "import": {
-    "description": "Importe seu progresso de outro dispositivo ou navegador, colando o código exportado ou carregando o arquivo exportado.",
-    "import_code": "Importar código",
-    "import_disabled_tooltip": "Você precisa inserir o código no campo acima.",
-    "import_from_file": "Importar de arquivo",
-    "placeholder": "Cole o código aqui ou importe do arquivo abaixo.",
-    "title": "Importar progresso"
-  },
-  "reset": {
-    "confirm": {
-      "body": "Você tem certeza de que deseja redefinir todo o seu progresso?",
-      "cancel": "Cancelar",
-      "reset": "Redefinir",
-      "title": "Redefinir todo o progresso"
+    "tools": {
+      "title": "Ferramentas",
+      "subtitle": "Ferramentas úteis criadas por outras pessoas incríveis para ajudá-lo a completar suas camuflagens mais rapidamente."
     },
-    "description": "Esta ação redefinirá todo o seu progresso e começará do zero.",
-    "reset_my_progress": "Redefinir meu progresso",
-    "title": "Redefinir todo o progresso",
-    "warning": "Esta ação é irreversível se você não exportou seu progresso."
-  },
-  "weapon_completion": {
-    "title": "Conclusão de armas",
-    "description": "Escolha qual camuflagem deve ser considerada como concluída para cada arma. Isso é útil se você quiser acompanhar seu progresso em direção a um estágio específico de camuflagem. Por exemplo, se você quiser rastrear seu progresso em etapas até o objetivo final, em vez de apenas o estágio final.",
-    "label": "Estágio de conclusão da arma",
-    "options": {
-      "1": "Dourado / Ouro Mítico / Tigre Dourado",
-      "2": "Diamante / Opala / King's Ransom",
-      "3": "Dark Spine / Afterlife / Catalyst",
-      "4": "Dark Matter / Nebula / Abyss"
-    }
-  }
-},
-"tools": {
-  "title": "Ferramentas",
-  "subtitle": "Ferramentas úteis criadas por outras pessoas incríveis para ajudá-lo a completar suas camuflagens mais rapidamente."
-},
-"warzone": {
-  "completed_modal": {
-    "body": "Parabéns por concluir todas as camuflagens de Warzone! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
-    "support_link": "comprando-me uma cerveja",
-    "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
-    "title": "Camuflagens de Warzone concluídas 👏🥳"
-  },
-  "progress": {
-    "label": "Progresso Abyss",
-    "tooltip": "Progresso para concluir todas as camuflagens de Warzone"
-  }
-},
+    "warzone": {
+      "completed_modal": {
+        "body": "Parabéns por concluir todas as camuflagens de Warzone! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
+        "support_link": "comprando-me uma cerveja",
+        "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
+        "title": "Camuflagens de Warzone concluídas 👏🥳"
+      },
+      "progress": {
+        "label": "Progresso Abyss",
+        "tooltip": "Progresso para concluir todas as camuflagens de Warzone"
+      }
+    },
 
-      "multiplayer": {
-  "completed_in_category": "Armas concluídas na categoria",
-  "completed_modal": {
-    "body": "Parabéns por concluir a jornada pela camuflagem Dark Matter! Foi um longo caminho! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
-    "support_link": "comprando-me uma cerveja",
-    "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
-    "title": "Camuflagens de multiplayer concluídas! 👏🥳"
-  },
-  "double_click_category_tooltip": "Clique duas vezes para alternar a categoria como concluída",
-  "double_click_tooltip": "Clique duas vezes para {state} arma",
-  "finished_placeholder": "Você concluiu todos os desafios de camuflagem 👏",
-  "info_link": "aqui",
-  "info_tooltip": "Você só precisa concluir o número de armas básicas que existem para cada categoria para ganhar o desafio de camuflagem Forged. Por exemplo, os Fuzis de Assalto exigem um total de 6 camuflagens Gilded para desbloquear o desafio Forged para todas as armas dessa categoria. Pressione este ícone para ler mais.",
-  "info": "Você só precisa concluir o número de armas básicas que existem para cada categoria para ganhar o desafio de camuflagem Forged. Por exemplo, os Fuzis de Assalto exigem um total de 6 camuflagens Gilded para desbloquear o desafio Forged para todas as armas dessa categoria. Leia mais {link}.",
-  "progress": {
-    "label": "Progresso Dark Matter",
-    "tooltip": "Progresso para concluir todas as camuflagens de multiplayer"
+    "multiplayer": {
+      "completed_in_category": "Armas concluídas na categoria",
+      "completed_modal": {
+        "body": "Parabéns por concluir a jornada pela camuflagem Dark Matter! Foi um longo caminho! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
+        "support_link": "comprando-me uma cerveja",
+        "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
+        "title": "Camuflagens de multiplayer concluídas! 👏🥳"
+      },
+      "double_click_category_tooltip": "Clique duas vezes para alternar a categoria como concluída",
+      "double_click_tooltip": "Clique duas vezes para {state} arma",
+      "finished_placeholder": "Você concluiu todos os desafios de camuflagem 👏",
+      "info_link": "aqui",
+      "info_tooltip": "Você só precisa concluir o número de armas básicas que existem para cada categoria para ganhar o desafio de camuflagem Forged. Por exemplo, os Fuzis de Assalto exigem um total de 6 camuflagens Gilded para desbloquear o desafio Forged para todas as armas dessa categoria. Pressione este ícone para ler mais.",
+      "info": "Você só precisa concluir o número de armas básicas que existem para cada categoria para ganhar o desafio de camuflagem Forged. Por exemplo, os Fuzis de Assalto exigem um total de 6 camuflagens Gilded para desbloquear o desafio Forged para todas as armas dessa categoria. Leia mais {link}.",
+      "progress": {
+        "label": "Progresso Dark Matter",
+        "tooltip": "Progresso para concluir todas as camuflagens de multiplayer"
+      }
+    },
+    "zombies": {
+      "completed_modal": {
+        "body": "Parabéns por concluir a jornada pela camuflagem Nebula! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
+        "support_link": "comprando-me uma cerveja",
+        "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
+        "title": "Camuflagens de Zumbis concluídas 👏🥳"
+      },
+      "progress": {
+        "label": "Progresso Nebula",
+        "tooltip": "Progresso para concluir todas as camuflagens de zumbis"
+      }
+    },
+    "challenges": {
+      "types": {
+        "aerial_scorestreaks": "{amount} streaks aéreos destruídos",
+        "armored_zombie_kills": "{amount} abates de Zumbis Blindados",
+        "consecutive_kills_without_taking_damage": "{amount} abates consecutivos sem sofrer dano {times} vezes",
+        "critical_kills_rapidly": "{amount} abates críticos rapidamente {times} vezes",
+        "critical_kills": "{amount} abates críticos",
+        "destructions_sm": "{amount} streaks ou veículos inimigos destruídos em uma única partida {times} vezes",
+        "direct_hit_kills": "{amount} abates diretos",
+        "double_kills": "{amount} abates duplos",
+        "eliminations": "{amount} eliminações",
+        "elite_zombie_kills": "{amount} abates de Zumbis Elite",
+        "headshots": "{amount} tiros na cabeça",
+        "hipfire_kills": "{amount} abates de tiro livre",
+        "kills": "{amount} abates",
+        "kills_sm": "{amount} abates em uma única partida {times} vezes",
+        "kills_at_rare_rarity_or_higher": "{amount} abates em raridade rara ou superior",
+        "kills_in_a_single_shot": "{amount} abates com um único disparo {times} vezes",
+        "kills_shortly_after_sprinting": "{amount} abates logo após correr",
+        "kills_shortly_after_switching_weapons": "{amount} abates logo após trocar de arma",
+        "kills_while_enforcer_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Enforcer está ativa",
+        "kills_while_moving": "{amount} abates enquanto se move",
+        "kills_while_pack_a_punched": "{amount} abates com Pack-a-Punch",
+        "kills_while_recon_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Recon está ativa",
+        "kills_while_strategist_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Estrategista está ativa",
+        "kills_with_4x_or_higher_magnification_scope": "{amount} abates com mira 4x ou maior",
+        "kills_with_brain_rot_equipped": "{amount} abates com Brain Rot equipado",
+        "kills_with_cryo_freeze_equipped": "{amount} abates com Cryo Freeze equipado",
+        "kills_with_dead_wire_equipped": "{amount} abates com Dead Wire equipado",
+        "kills_with_napalm_burst_equipped": "{amount} abates com Napalm Burst equipado",
+        "kills_with_suppressor": "{amount} abates usando supressor",
+        "kills_with_underbarrel_launcher": "{amount} abates com lançador sob o cano",
+        "kills_without_dying": "{amount} abates sem morrer {times} vezes",
+        "kills_without_releasing_trigger": "{amount} abates sem soltar o gatilho {times} vezes",
+        "kills_without_reloading": "{amount} abates sem recarregar {times} vezes",
+        "longshot_kills": "{amount} abates de longa distância",
+        "mangler_kills": "{amount} abates de Mangler",
+        "one_kill_without_taking_damage": "Um abate sem sofrer dano {times} vezes",
+        "one_shot_kills": "{amount} abates de um tiro",
+        "parasite_kills": "{amount} abates de Parasitas",
+        "point_blank_kills": "{amount} abates a queima-roupa",
+        "rapid_kills": "{amount} abates rapidamente {times} vezes",
+        "scorestreaks": "{amount} streaks inimigos destruídos",
+        "scorestreaks_or_enemy_equipment": "{amount} streaks ou equipamentos inimigos destruídos",
+        "special_zombie_eliminations": "{amount} eliminações de Zumbis Especiais",
+        "special_zombie_kills": "{amount} abates de Zumbis Especiais",
+        "triple_kills": "{amount} abates triplos",
+        "vermin_eliminations": "{amount} eliminações de Pragas",
+        "vermin_kills": "{amount} abates de Pragas",
+        "zombie_kills_while_affected_by_tactical": "{amount} abates de Zumbis enquanto estão afetados por sua tática"
+      }
+    },
+    "calling_card_categories": {},
+    "weapon_categories": {
+      "Assault Rifles": "Fuzis de Assalto",
+      "Battle Rifles": "Fuzis de Batalha",
+      "Handguns": "Pistolas",
+      "Launchers": "Lançadores",
+      "Light Machine Guns": "Metralhadoras Leves",
+      "Marksman Rifles": "Fuzis de Precisão",
+      "Melee": "Corpo a Corpo",
+      "Shotguns": "Espingardas",
+      "Sniper Rifles": "Fuzis de Sniper",
+      "Sub Machine Guns": "Submetralhadoras"
+    }
   }
-},
-"zombies": {
-  "completed_modal": {
-    "body": "Parabéns por concluir a jornada pela camuflagem Nebula! Isso é um grande feito! Você começou a rastrear seu progresso aqui há {duration} em {date}.",
-    "support_link": "comprando-me uma cerveja",
-    "support": "Se você gostou deste rastreador, mostre sua apreciação divulgando-o e, se estiver se sentindo generoso, considere {0} como forma de agradecimento. Espero te ver no campo de batalha! Saúde! 🍺",
-    "title": "Camuflagens de Zumbis concluídas 👏🥳"
-  },
-  "progress": {
-    "label": "Progresso Nebula",
-    "tooltip": "Progresso para concluir todas as camuflagens de zumbis"
-  }
-},
-"challenges": {
-  "types": {
-    "aerial_scorestreaks": "{amount} streaks aéreos destruídos",
-    "armored_zombie_kills": "{amount} abates de Zumbis Blindados",
-    "consecutive_kills_without_taking_damage": "{amount} abates consecutivos sem sofrer dano {times} vezes",
-    "critical_kills_rapidly": "{amount} abates críticos rapidamente {times} vezes",
-    "critical_kills": "{amount} abates críticos",
-    "destructions_sm": "{amount} streaks ou veículos inimigos destruídos em uma única partida {times} vezes",
-    "direct_hit_kills": "{amount} abates diretos",
-    "double_kills": "{amount} abates duplos",
-    "eliminations": "{amount} eliminações",
-    "elite_zombie_kills": "{amount} abates de Zumbis Elite",
-    "headshots": "{amount} tiros na cabeça",
-    "hipfire_kills": "{amount} abates de tiro livre",
-    "kills": "{amount} abates",
-    "kills_sm": "{amount} abates em uma única partida {times} vezes",
-    "kills_at_rare_rarity_or_higher": "{amount} abates em raridade rara ou superior",
-    "kills_in_a_single_shot": "{amount} abates com um único disparo {times} vezes",
-    "kills_shortly_after_sprinting": "{amount} abates logo após correr",
-    "kills_shortly_after_switching_weapons": "{amount} abates logo após trocar de arma",
-    "kills_while_enforcer_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Enforcer está ativa",
-    "kills_while_moving": "{amount} abates enquanto se move",
-    "kills_while_pack_a_punched": "{amount} abates com Pack-a-Punch",
-    "kills_while_recon_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Recon está ativa",
-    "kills_while_strategist_combat_specialty_is_active": "{amount} abates enquanto a especialidade de combate Estrategista está ativa",
-    "kills_with_4x_or_higher_magnification_scope": "{amount} abates com mira 4x ou maior",
-    "kills_with_brain_rot_equipped": "{amount} abates com Brain Rot equipado",
-    "kills_with_cryo_freeze_equipped": "{amount} abates com Cryo Freeze equipado",
-    "kills_with_dead_wire_equipped": "{amount} abates com Dead Wire equipado",
-    "kills_with_napalm_burst_equipped": "{amount} abates com Napalm Burst equipado",
-    "kills_with_suppressor": "{amount} abates usando supressor",
-    "kills_with_underbarrel_launcher": "{amount} abates com lançador sob o cano",
-    "kills_without_dying": "{amount} abates sem morrer {times} vezes",
-    "kills_without_releasing_trigger": "{amount} abates sem soltar o gatilho {times} vezes",
-    "kills_without_reloading": "{amount} abates sem recarregar {times} vezes",
-    "longshot_kills": "{amount} abates de longa distância",
-    "mangler_kills": "{amount} abates de Mangler",
-    "one_kill_without_taking_damage": "Um abate sem sofrer dano {times} vezes",
-    "one_shot_kills": "{amount} abates de um tiro",
-    "parasite_kills": "{amount} abates de Parasitas",
-    "point_blank_kills": "{amount} abates a queima-roupa",
-    "rapid_kills": "{amount} abates rapidamente {times} vezes",
-    "scorestreaks": "{amount} streaks inimigos destruídos",
-    "scorestreaks_or_enemy_equipment": "{amount} streaks ou equipamentos inimigos destruídos",
-    "special_zombie_eliminations": "{amount} eliminações de Zumbis Especiais",
-    "special_zombie_kills": "{amount} abates de Zumbis Especiais",
-    "triple_kills": "{amount} abates triplos",
-    "vermin_eliminations": "{amount} eliminações de Pragas",
-    "vermin_kills": "{amount} abates de Pragas",
-    "zombie_kills_while_affected_by_tactical": "{amount} abates de Zumbis enquanto estão afetados por sua tática"
-  }
-},
-"calling_card_categories": {},
-"weapon_categories": {
-  "Assault Rifles": "Fuzis de Assalto",
-  "Battle Rifles": "Fuzis de Batalha",
-  "Handguns": "Pistolas",
-  "Launchers": "Lançadores",
-  "Light Machine Guns": "Metralhadoras Leves",
-  "Marksman Rifles": "Fuzis de Precisão",
-  "Melee": "Corpo a Corpo",
-  "Shotguns": "Espingardas",
-  "Sniper Rifles": "Fuzis de Sniper",
-  "Sub Machine Guns": "Submetralhadoras"
 }
-    }}
