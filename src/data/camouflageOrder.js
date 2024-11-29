@@ -75,7 +75,6 @@ const specialOrder = [
   'Sunny Splash',
   'Crowsbane',
 
-
   // C9
   'Heatwave',
   'Panther',
@@ -212,7 +211,7 @@ const specialOrder = [
   'Wavy',
   'Condemn',
 
-  // CIGMA 28
+  // CIGMA 2B
   'Policia',
   'Abstract',
   'CBRNE',
