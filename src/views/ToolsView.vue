@@ -21,6 +21,7 @@
 <script>
 import beamsmasherCalculatorLogo from '@/assets/tools/beamsmasher-calculator.png'
 import declassifiedLogo from '@/assets/tools/declassified.png'
+import loadoutizeLogo from '@/assets/tools/loadoutize.png'
 
 export default {
   data() {
@@ -38,6 +39,13 @@ export default {
           description: 'A map tool for Call of Duty Zombies.',
           icon: declassifiedLogo,
           url: 'https://declassified.app/',
+        },
+        {
+          title: 'Loadoutize',
+          description:
+            'Craft, customize, and share weapon configurations. Explore top-rated loadouts and dominate the battlefield.',
+          icon: loadoutizeLogo,
+          url: 'https://www.loadoutize.com/',
         },
       ],
     }
