@@ -37,7 +37,8 @@ const specialCamouflages = {
 
   'Power Drill': {
     multiplayer: {
-      'Twilgiht Toadstool': { amount: 50, type: 'kills_while_recon_combat_speciality_is_active' },
+      'Twilight Toadstool': { amount: 50, type: 'kills_while_recon_combat_speciality_is_active' },
+
       'Thermal': { amount: 15, type: 'kills_shortly_after_sprinting' },
     },
 
