@@ -296,6 +296,7 @@
       "kills_without_taking_damage": "{amount} kills without taking damage {times} times",
       "kills_in_a_single_match": "{amount} kills in a single match {times} times",
       "kills_while_moving": "{amount} kills while moving",
+      "kills_while_most_wanted": "{amount} eliminations while being the Most Wanted Contract target",
       "kills_while_pack_a_punched": "{amount} kills while Pack-a-Punched",
       "kills_while_recon_combat_specialty_is_active": "{amount} kills while Recon Combat Specialty is active",
       "kills_while_strategist_combat_specialty_is_active": "{amount} kills while Strategist Combat Specialty is active",
@@ -309,6 +310,7 @@
       "kills_without_dying": "{amount} kills without dying {times} times",
       "kills_without_releasing_trigger": "{amount} kills without releasing the trigger {times} times",
       "kills_without_reloading": "{amount} kills without reloading {times} times",
+      "kills_on_affected_enemies_with_tacticals": "{amount} kills on enemies affected by your Stun, Flashbang, or Shock Charge",
       "longshot_kills": "{amount} longshot kills",
       "mangler_kills": "{amount} Mangler kills",
       "one_kill_without_taking_damage": "One kill without taking damage {times} times",
@@ -337,6 +339,7 @@
     "Melee": "Melee",
     "Shotguns": "Shotguns",
     "Sniper Rifles": "Sniper Rifles",
-    "Sub Machine Guns": "Sub Machine Guns"
+    "Sub Machine Guns": "Sub Machine Guns",
+    "Specials": "Specials"
   }
 }
