@@ -234,6 +234,12 @@ const specialOrder = [
   'Slip',
   'Banished',
   'Contort',
+
+  // Power Drill
+  'Twilight Toadstool',
+  'Thermal',
+  'Glimmering Grove',
+  'Shimmer',
 ]
 
 const masteryOrder = [
