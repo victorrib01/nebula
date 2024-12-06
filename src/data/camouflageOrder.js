@@ -114,6 +114,8 @@ const specialOrder = [
   // Saug
   'Netherworld',
   'Solar Tide',
+  'Whisper',
+  'Limewave',
 
   // PU-21
   'Neon Bath',
@@ -240,6 +242,12 @@ const specialOrder = [
   'Thermal',
   'Glimmering Grove',
   'Shimmer',
+
+  // Sirin 9mm
+  'Nebulon',
+  'Enchanted',
+  'Starsync',
+  'Tempt Fate'
 ]
 
 const masteryOrder = [
